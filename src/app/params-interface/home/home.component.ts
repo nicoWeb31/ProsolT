@@ -10,6 +10,7 @@ import { timeout } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
 
 
+  numbers: object[];
   
 
 
@@ -21,7 +22,12 @@ export class HomeComponent implements OnInit {
  
     //testnumber interceptor + refreshtoken
     this._InterServ.getNumberTest().subscribe({
-      next: value => console.log(value),
+      next: (value)=>{
+        console.log(value)
+        let listnum = value._embedded.numbers;
+        this.numbers = listnum;
+        console.log(listnum)
+      },
       error: err => console.error(err)
       
       

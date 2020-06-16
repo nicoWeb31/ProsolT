@@ -1,1 +1,25 @@
-<p>home works!</p>
+
+<h2 class="ui header">
+    <i class="settings icon"></i>
+    <div class="content">
+      Account Settings
+      <div class="sub header">Manage your preferences</div>
+      
+    </div>
+  </h2>
+
+
+
+
+<div class="ui pointing vertical menu">
+  <a class="item">
+    Génerale
+  </a>
+  <div class="item">
+    <b>Numero de Télephone : </b>
+    <div class="menu" *ngFor="let number of numbers"> 
+      <a class="item">{{number.number}}</a>
+ 
+    </div>
+  </div>
+</div>
