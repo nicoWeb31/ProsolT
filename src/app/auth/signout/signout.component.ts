@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+import { AuthService} from '../auth.service';
+
+@Component({
+  selector: 'app-signout',
+  templateUrl: './signout.component.html',
+  styleUrls: ['./signout.component.css']
+})
+export class SignoutComponent implements OnInit {
+
+  constructor(
+    private _authServ: AuthService
+  ) { }
+
+  ngOnInit(): void {
+    this._authServ.logoutUser()
+  }
+
+}

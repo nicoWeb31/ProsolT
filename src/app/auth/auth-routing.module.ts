@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SigninComponent } from './signin/signin.component';
+import { SignoutComponent } from './signout/signout.component';
 
 const routes: Routes = [
-  {path: '', component: SigninComponent}
+  {path: '', component: SigninComponent},
+  {path: 'signout', component: SignoutComponent}
 ];
 
 @NgModule({

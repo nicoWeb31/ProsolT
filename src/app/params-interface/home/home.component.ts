@@ -9,6 +9,10 @@ import { timeout } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
+
+  
+
+
   constructor(
     private _InterServ: InterfaceService,
   ) { }

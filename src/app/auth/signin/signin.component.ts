@@ -27,11 +27,7 @@ export class SigninComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // //testgetPost
-    // this._authServ.getPost().subscribe({
-    // next: value => console.log(value)
-    // })
- 
+
   }
   
   
@@ -56,10 +52,6 @@ export class SigninComponent implements OnInit {
 
     console.log(this.authForm.value)
   }
-
-      
-    
-    
 
 
 }
