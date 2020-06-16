@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InterfaceService } from '../interface.service'
-import { timeout } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
  
     //testnumber interceptor + refreshtoken
     this._InterServ.getNumberTest().subscribe({
-      next: (value)=>{
+      next: (value: any)=>{
         console.log(value)
         let listnum = value._embedded.numbers;
         this.numbers = listnum;
