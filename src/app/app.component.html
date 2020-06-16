@@ -1,7 +1,7 @@
 <div class="ui container">
     <div class="ui secondary pointing menu">
-        <a  routerLink="/" [routerLinkActiveOptions]="{ exact:true }" class="item" routerLinkActive="active" > Login</a>
-        <a  routerLink="/logout" class="item" routerLinkActive="active" (click)="logout()"> Logout</a>
+        <a  *ngIf="!log" routerLink="/" [routerLinkActiveOptions]="{ exact:true }" class="item" routerLinkActive="active" > Login</a>
+        <a  *ngIf="log"  routerLink="/logout" class="item" routerLinkActive="active" (click)="logout()"> Logout</a>
         <a  routerLink="/params" class="item" routerLinkActive="active">Home</a>
         
     </div>

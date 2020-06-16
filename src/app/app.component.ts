@@ -8,7 +8,7 @@ import {  AuthService } from './auth/auth.service';
 })
 export class AppComponent {
 
-  log: boolean
+   log: boolean
 
   constructor(private _authServ: AuthService){}
 
@@ -16,16 +16,17 @@ export class AppComponent {
   
   
   ngOnInit() {
-    
     this.log = this._authServ.isLoggedIn();
-
+    console.log(` user log = ${this._authServ.isLoggedIn()}`)
   }
-
+    
 
   logout(){
     this._authServ.logoutUser();
   }
  
+
+
     
 
 

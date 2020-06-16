@@ -45,28 +45,21 @@ export class SigninComponent implements OnInit {
     this._authServ.Signin(this.authForm.value).subscribe({
       
       next: (value) => {
-        // this.token = value.access_token;
-        // this.refreshToken = value.refresh_token;
-
-        //creation de la session
-        // localStorage.setItem('access-token',this.token);
-        // localStorage.setItem('refresh-token',this.refreshToken);
-        // localStorage.setItem('user',this.authForm.value.username);
 
         console.log(value);
 
-        this._router.navigate(['/params']);
-
-
-      
+        this._router.navigateByUrl('/params');
       },
       error: err=>console.log(err)
     }
     );
-    
-    
+
     console.log(this.authForm.value)
-}
+  }
+
+      
+    
+    
 
 
 }
