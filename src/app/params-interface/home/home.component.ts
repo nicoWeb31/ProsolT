@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { InterfaceService } from '../interface.service'
-import { map } from 'rxjs/operators';
+import { InterfaceService } from '../interface.service';
+import { NumberTel } from '../models/NumberTel'
+
+
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,8 @@ import { map } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
 
 
-  numbers: object[];
+
+  numbers: object = [];
   
 
 
@@ -22,7 +25,7 @@ export class HomeComponent implements OnInit {
  
     //testnumber interceptor + refreshtoken
     this._InterServ.getNumberTest().subscribe({
-      next: (value: any)=>{
+      next: (value: NumberTel)=>{
         console.log(value)
         let listnum = value._embedded.numbers;
         this.numbers = listnum;

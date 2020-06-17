@@ -1,0 +1,27 @@
+
+:root {
+
+    --main-bg-color:  #DBDBDB;
+    --sec-bg-color: #4170B4;
+    --third-bg-color:#324C76;
+
+}
+
+
+
+
+._header {
+    background-color:#DBDBDB;
+    padding: 20px;
+}
+
+._sidebar{
+    background-color: #4170B4 !important;
+    color: white;
+}
+
+._sidebar * {
+    color: white;
+}
+
+    
