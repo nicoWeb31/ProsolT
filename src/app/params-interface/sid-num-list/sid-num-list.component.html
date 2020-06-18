@@ -1,0 +1,20 @@
+<div class="ui celled list _side">
+
+    <div class="item" *ngFor="let num of this.numbers">
+
+        
+        <a [routerLink]="num.number" routerLinkActive="active" >
+            <div class="content">
+                <div class="header">
+                    {{ num.number }}
+                </div>
+
+            </div>
+        </a>
+
+
+
+
+    </div>
+</div>
+

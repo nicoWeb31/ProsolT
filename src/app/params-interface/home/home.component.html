@@ -1,13 +1,11 @@
 
-//component Header 
-
 <div class="_header"> 
 
   <h2 class="ui header ">
       <i class="settings icon"></i>
       <div class="content ">
         Account Settings
-        <div class="sub header">Manage your preferences</div>
+        <div class="sub header"> Manage your preferences </div>
         
       </div>
     </h2>
@@ -16,42 +14,36 @@
 
 
 
+<div class="_header"> 
 
+  <h2 class="ui header ">
+
+      <div class="content ">
+        Account Settings number : 
+        <app-header-params></app-header-params>
+
+      </div>
+    </h2>
+
+</div>
 
 <div class ="ui grid stackable">
 
   <div class="five wide column">
 
 
-      component sidBar a implementer
+    <h3>Numéro : </h3>
+
+     <app-sid-num-list></app-sid-num-list>
 
 
   </div>
 
   <div class="eleven wide column">
 
-
-
-      component body main a implementer
-
-
-
-
+    <router-outlet></router-outlet>
+    
   </div>
 
 </div>
 
-
-
-<!-- 
-<div class="ui pointing vertical menu _sidebar">
-  <a class="item ">
-    Génerale
-  </a>
-  <div class="item">
-    <b>Numero de Télephone : </b>
-    <div class="menu" *ngFor="let number of numbers"> 
-      <a class="item">{{number.number}}</a>
-    </div>
-
-</div> -->

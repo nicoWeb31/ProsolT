@@ -17,7 +17,7 @@ interface _embedded{
 interface numbers{
 
     name: string;
-    number: number;
+    number: string;
     type: string;
     setting?: object;
    

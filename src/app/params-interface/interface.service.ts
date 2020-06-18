@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders} from '@angular/common/http';
-import { map } from 'rxjs/operators'
+import { map } from 'rxjs/operators';
+import { NumberTel } from './models/NumberTel';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class InterfaceService {
 
  
   getNumberTest(){
-    return this.http.get(this.urlGetNumber);
+    return this.http.get<NumberTel>(this.urlGetNumber);
   }
 
 

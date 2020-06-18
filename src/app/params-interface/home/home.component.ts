@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InterfaceService } from '../interface.service';
-import { NumberTel } from '../models/NumberTel'
+import { NumberTel } from '../models/NumberTel';
 
 
 
@@ -24,18 +24,18 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
  
     //testnumber interceptor + refreshtoken
-    this._InterServ.getNumberTest().subscribe({
-      next: (value: NumberTel)=>{
-        console.log(value)
-        let listnum = value._embedded.numbers;
-        this.numbers = listnum;
-        console.log(listnum)
-      },
-      error: err => console.error(err)
+    // this._InterServ.getNumberTest().subscribe({
+    //   next: (value: NumberTel)=>{
+    //     console.log(value)
+    //     let listnum = value._embedded.numbers;
+    //     this.numbers = listnum;
+    //     console.log(listnum)
+    //   },
+    //   error: err => console.error(err)
       
       
 
-    })
+    // })
 
     console.log('getRefreshToken() : '+ localStorage.getItem('REFRESH_TOKEN'))
     console.log('getToken() : '+ localStorage.getItem('JWT_TOKEN'))
