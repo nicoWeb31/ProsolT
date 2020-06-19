@@ -30,7 +30,7 @@ export class SidNumListComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.interserv.getNumberTest().subscribe((values)=>{
+    this.interserv.getNumbers().subscribe((values)=>{
     console.log("SidNumListComponent -> ngOnInit -> value", values)
     this.numbers = values._embedded.numbers
     console.log("SidNumListComponent -> ngOnInit -> this.numbers", this.numbers)

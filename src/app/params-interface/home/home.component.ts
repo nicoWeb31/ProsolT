@@ -39,16 +39,16 @@ export class HomeComponent implements OnInit {
 
     // })
 
-    console.log('getRefreshToken() : '+ localStorage.getItem('REFRESH_TOKEN'))
-    console.log('getToken() : '+ localStorage.getItem('JWT_TOKEN'))
+    // console.log('getRefreshToken() : '+ localStorage.getItem('REFRESH_TOKEN'))
+    // console.log('getToken() : '+ localStorage.getItem('JWT_TOKEN'))
 
-
+  }
+  
+}
   
     
     
-  }
 
 
 
 
-}

@@ -4,13 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { PlacholderComponent } from './placholder/placholder.component';
 import { BodyParamsComponent } from './body-params/body-params.component';
 import { HeaderParamsComponent } from './header-params/header-params.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 
 const routes: Routes = [
   {path:'', component:HomeComponent,children:[
 
-    {path:':id', component:HeaderParamsComponent},
-    {path:'', component:PlacholderComponent},
+    {path:':id',component:BodyParamsComponent},
+    {path:'', component:PlacholderComponent}
+
     
   ]}
 ]; 

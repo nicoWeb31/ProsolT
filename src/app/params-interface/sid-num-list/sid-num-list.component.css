@@ -1,4 +1,4 @@
-/* .item a {
+.item a {
     color: black;
 }
 
@@ -13,13 +13,13 @@ a.active:before {
     content: '>';
     font-size: 20px;
     margin-right: 10px;
-} */
-/* 
+}
+
 ._side{
     background-color: rgba(91, 109, 190, 0.3);
-} */
+} 
 
-/* .content {
+.content {
     width: 90%;
 }
 
@@ -29,4 +29,4 @@ a.active:before {
     overflow: hidden;
     width: 100%;
     text-overflow: ellipsis;
-} */
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { InterfaceService } from '../interface.service';
 
 @Component({
   selector: 'app-header-params',
@@ -9,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 export class HeaderParamsComponent implements OnInit {
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private interfServ: InterfaceService
   ) { }
 
 
@@ -18,14 +20,22 @@ export class HeaderParamsComponent implements OnInit {
     this.route.params.subscribe(
       ({id}) => {
       console.log("HeaderParamsComponent -> ngOnInit -> id", id)
-      //console.log("BodyParamsComponent -> ngOnInit -> params", params)
-      
       // get num by id
-
-      
+      this.interfServ.getNumber(id).subscribe(number =>{
+      console.log("HeaderParamsComponent -> ngOnInit -> number", number)
+    })
+        
 
     }
     )
+
+
+
+
+
+
+      
+
   }
     
         

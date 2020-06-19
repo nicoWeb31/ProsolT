@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//recut de l'id avec
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-body-params',
@@ -9,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class BodyParamsComponent implements OnInit {
 
   constructor(
-
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
