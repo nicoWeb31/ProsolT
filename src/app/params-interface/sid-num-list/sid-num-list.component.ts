@@ -21,7 +21,7 @@ interface numbers{
 export class SidNumListComponent implements OnInit {
   
   numbers: numbers;
-  toto:string = "toto"
+
 
   constructor(
     private interserv :InterfaceService,

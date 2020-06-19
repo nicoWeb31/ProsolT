@@ -44,7 +44,7 @@ export class SigninComponent implements OnInit {
 
         console.log(value);
 
-        this._router.navigateByUrl('/params');
+        this._router.navigateByUrl('/params/num');
       },
       error: err=>console.log(err)
     }

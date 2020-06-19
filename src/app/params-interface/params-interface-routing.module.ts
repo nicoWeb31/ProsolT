@@ -10,11 +10,15 @@ import { NotFoundComponent } from '../not-found/not-found.component';
 const routes: Routes = [
   {path:'', component:HomeComponent,children:[
 
-    {path:':id',component:BodyParamsComponent},
-    {path:'', component:PlacholderComponent}
+    {path:'num/:id', loadChildren: ()=>import('./header/header.module').then((m)=>m.HeaderModule)},
+    {path:'num', component:PlacholderComponent}
 
+
+    // {path: '', component: PlacholderComponent},
+    // {path:'num/:id',component:HeaderParamsComponent},
     
-  ]}
+    
+  ]},
 ]; 
 
 

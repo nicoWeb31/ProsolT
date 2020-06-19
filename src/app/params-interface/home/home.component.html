@@ -1,32 +1,4 @@
 
-<div class="_header"> 
-
-  <h2 class="ui header ">
-      <i class="settings icon"></i>
-      <div class="content ">
-        Account Settings
-        <div class="sub header"> Manage your preferences </div>
-        
-      </div>
-    </h2>
-
-</div>
-
-<div class="_header"> 
-
-  <h2 class="ui header ">
-
-      <div class="content ">
-
-    
-        
-      </div>
-    </h2>
-    
-  </div>
-  
-  
-  
   <div class ="ui grid stackable">
     
     <div class="five wide column">
@@ -44,7 +16,19 @@
     
     <div class="eleven wide column">
       
-      <router-outlet></router-outlet>
+      <router-outlet>
+
+        
+      </router-outlet>
+      <!-- <div>
+        <div class="ui top attached tabular menu">
+          <a class="active item" routerLink="./num" routerLinkActive="active" >Informations Génerale</a>
+          <a class="item" [routerLink]="['./','num','gestion']" routerLinkActive="active" >Gestions de l'accueil</a>
+        </div>
+        <div class="ui bottom attached segment">
+         
+        </div>
+      </div> -->
       
     
   </div>

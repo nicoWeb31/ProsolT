@@ -12,7 +12,7 @@ export class HeaderParamsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private interfServ: InterfaceService
-  ) { }
+  ) {}
 
 
   ngOnInit(): void {
