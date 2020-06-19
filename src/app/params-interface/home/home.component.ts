@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InterfaceService } from '../interface.service';
 import { NumberTel } from '../models/NumberTel';
+import { Router } from '@angular/router'
 
 
 
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private _InterServ: InterfaceService,
+    private route : Router
   ) { }
 
   ngOnInit(): void {
@@ -39,6 +41,8 @@ export class HomeComponent implements OnInit {
 
     console.log('getRefreshToken() : '+ localStorage.getItem('REFRESH_TOKEN'))
     console.log('getToken() : '+ localStorage.getItem('JWT_TOKEN'))
+
+
   
     
     

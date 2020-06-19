@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header-params',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderParamsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute
+  ) { }
+
 
   ngOnInit(): void {
+
+    this.route.params.subscribe(
+      ({id}) => {
+      console.log("HeaderParamsComponent -> ngOnInit -> id", id)
+      //console.log("BodyParamsComponent -> ngOnInit -> params", params)
+      
+      // get num by id
+
+      
+
+    }
+    )
   }
+    
+        
+    
+
 
 }
