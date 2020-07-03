@@ -1,0 +1,10 @@
+- mise en place du projet,
+-systeme login/logout : 
+    - Avec oauth2, inteceptor ok 
+    -refresh token ok
+    -guard ok 
+
+recuperartion des premieres donné de l'api
+debut de la mise en place des datas
+
+switch sur l'api

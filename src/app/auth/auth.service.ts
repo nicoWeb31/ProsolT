@@ -26,7 +26,7 @@ export class AuthService {
   private readonly REFRESH_TOKEN = 'REFRESH_TOKEN';
   private loggedUser: string;
 
-  urlSigin = 'http://api-extranet.com/oauth';
+  urlSigin = "http://0.0.0.0:8080/oauth" //'http://api-extranet.com/oauth';
 
 
   // private currentUserSubject: BehaviorSubject<User>;

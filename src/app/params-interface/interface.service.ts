@@ -21,7 +21,7 @@ interface Numb{
 })
 export class InterfaceService {
 
-  urlGetNumber = 'http://api-extranet.com'
+  urlGetNumber = 'http://0.0.0.0:8080' //'http://api-extranet.com'
 
   constructor(
     private http: HttpClient
